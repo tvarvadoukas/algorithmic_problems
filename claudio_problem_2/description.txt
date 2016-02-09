@@ -1,0 +1,79 @@
+A new airline company is setting up operations and needs your help! They want 
+to optimize their routes so as to cover a full list of cities, while minimizing 
+the cost of their operations. You are provided with the number of N cities and 
+with the costs of operating flights between some of the cities.  Can you design 
+an algorithm that will return the list of routes that cover all the N cities at 
+the minimum operational cost?
+
+Assumptions: not all direct routes between all cities are possible, but all 
+cities can be reached either directly or via intermediate cities. You are 
+provided with the complete set of routes that are possible as input to your 
+algorithm the costs of operating a route from any city to any other directly 
+connected city is known and unique (i.e., no two costs between different direct 
+routes are the same) the cost of operating a route from city X to city Y is 
+equal to the cost of operating the route from city Y to city X Your algorithm 
+will get as input from stdin the following: on the first line, the number of 
+cities N on the second line, the total number of possible routes K on the 
+subsequent K lines, the possible routes between cities and their operational 
+cost, separated by spaces. Cities are integer numbers from 0 to N-1, costs are 
+floats
+
+The output of your algorithm should be the list of routes chosen to be operated 
+at the minimum cost, one route per line. After the list of routes, on the final 
+line the total cost of operating all the chosen routes should be printed.  (You 
+need to implement the method named "compute", the value of N and K is already 
+read from stdin and provided to you as a parameter by the template.) What is 
+the time complexity of the algorithm you’ve created?
+
+Examples: 
+Input: 
+8 
+16 
+4 5 0.35 
+4 7 0.37 
+5 7 0.28 
+0 7 0.16 
+1 5 0.32 
+0 4 0.38 
+2 3 0.17 
+1 7 0.19 
+0 2 0.26 
+1 2 0.36 
+1 3 0.29 
+2 7 0.34 
+6 2 0.40 
+3 6 0.52 
+6 0 0.58 
+6 4 0.93 
+Output: 
+0 7 0.16 
+2 3 0.17 
+1 7 0.19 
+0 2 0.26 
+5 7 0.28 
+4 5 0.35 
+6 2 0.40 
+1.81 
+Input: 
+7 
+12 
+0 1 5.00 
+0 5 8.00 
+1 5 10.00 
+1 2 16.00 
+1 6 3.00 
+2 3 26.00 
+2 6 30.00 
+3 4 4.00 
+3 6 14.00 
+4 5 18.00 
+4 6 12.00 
+5 6 2.00 
+Output: 
+5 6 2.00 
+1 6 3.00 
+3 4 4.00 
+0 1 5.00 
+4 6 12.00 
+1 2 16.00 
+42.00

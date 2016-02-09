@@ -1,0 +1,47 @@
+A number c of literary critics were asked "Which of the popular novels are masterpieces"? Their 
+choices ignited fervent discussions among readers. The moment is speculated by the p = c div 2 
+television stations that decide to organize, simultaneously and independently, talk-shows, each 
+inviting exactly two critics. The television stations pay critics for exclusivity - no critic can 
+appear in two different stations, but the amounts paid out are so high that no television station 
+can invite more than two critics.
+
+Given that the television stations' sponsors require that before and after their commercials there 
+are no fights or tensioned moments, each television station is required to invite critics with 
+similar but not identical opinions on which novel is a masterpiece - hence for each two invited 
+critics their options must differ by exactly one novel.
+
+Given c (the number of critics) and r (the number of novels), 1 <= c <= 100, 1<= r <= 20, together 
+with the list of novels considered great by each critic, help them giving one of the possible 
+solution such as the most television stations can host talk-shows.
+
+Input From STDIN you will read the amount of critics c and number of novels r, separated by space, 
+on a single line. On the i+1-th line (1 = i <= c) you have the list of masterpieces suggested by 
+critic i, as a series of at most r different integers between 1 and r, separated by space. The input 
+data is well formed and correct.
+
+Output On STDOUT you will write the number t, representing the number of television stations that 
+can host talk-shows; on the next t lines you will write the two critics (each numbered between 1 to 
+c) of the critics attending the show. Execution time/test: maximum 2 seconds.
+
+Example 1
+STDIN
+4 4
+1 3 2
+4 2
+1 2
+3 4 1
+STDOUT
+1
+1 3
+
+Example 2
+STDIN
+4 4
+1
+3 1 4
+4 1
+2 1
+STDOUT
+2
+1 4
+2 3
